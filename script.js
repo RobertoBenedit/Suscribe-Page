@@ -1,5 +1,3 @@
-
-
 const scriptURL =
     "https://script.google.com/macros/s/AKfycbxzhXU9NoHWbHWx5jmqxi-2sZAYaKwWy2lK7FeVh00LcE9LWg2tAXW-OwpNNRjZno_Z/exec";
 const form = document.forms["contact-us"];
@@ -11,9 +9,9 @@ form.addEventListener("submit", (e) => {
             msg.innerHTML = "Gracias por suscribirte!";
             alert("Envio Exitoso!");
             setTimeout(() => {
-               window.location.reload();
+                window.location.href = "https://www.instagram.com/rocomunica/";
             }, 5000);
-            form.reset();
+            // form.reset();
         })
         .catch((error) => console.error("Error!", error.message));
 });
