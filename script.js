@@ -9,11 +9,11 @@ form.addEventListener("submit", (e) => {
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
         .then((response) => {
             msg.innerHTML = "Gracias por suscribirte!";
+            alert("Envio Exitoso!");
             setTimeout(() => {
                window.location.reload();
             }, 5000);
             form.reset();
-            alert("Success!");
         })
         .catch((error) => console.error("Error!", error.message));
 });
