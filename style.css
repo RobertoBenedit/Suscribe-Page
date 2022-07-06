@@ -13,6 +13,7 @@ body {
     min-height: 100vh;
     line-height: 1.5;
     padding: 0 1rem;
+    background: linear-gradient(to right, rgb(26, 6, 104) 50%, rgb(12, 6, 36) 100%);
 
     display: flex;
     align-items: center;
@@ -34,6 +35,8 @@ body {
     box-shadow: var(--shadow);
     padding: 1.5em;
     border-radius: var(--rounded-md);
+    background-image: url(background.png);
+    color: #fff;
 }
 
 .contact-tille {
@@ -63,7 +66,9 @@ input:focus,
 textarea:focus {
     border-color: var(--blue);
     box-shadow: 0 0 0 .25rem var(--blue-light);
+
 }
+
 
 label {
     margin-bottom: .25rem;
@@ -88,3 +93,17 @@ label {
 }
 
 /* CONTACT */
+
+::placeholder {
+    color: blue;
+    opacity: 1;
+    font-style: italic;
+
+}
+
+
+input,
+textarea {
+    color: rgb(168, 156, 185);
+    opacity: 1;
+}
