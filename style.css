@@ -92,18 +92,16 @@ label {
 
 }
 
-/* CONTACT */
-
 ::placeholder {
     color: blue;
     opacity: 1;
     font-style: italic;
-
 }
-
 
 input,
 textarea {
     color: rgb(168, 156, 185);
     opacity: 1;
 }
+
+/* CONTACT */
